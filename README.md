@@ -1,70 +1,152 @@
-# Getting Started with Create React App
+# ShoppingListApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Project Image](https://res.cloudinary.com/practicaldev/image/fetch/s--UVX7ie6K--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/v4y43jjfj7u5r8to8qdu.png)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### Table of Contents
 
-### `npm start`
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Author Info](#author-info)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Description
 
-### `npm test`
+a simple Shopping List demonstration with React and Redux.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Technologies
 
-### `npm run build`
+- React
+- Redux
+- Axios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Packages
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Package | Link | Version |
+| ------- | ------- | ------- |
+| **react** | [`@npmjs/package/react`](https://www.npmjs.com/package/react) | [![version](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://www.npmjs.com/package/react)
+| **axios** | [`@npmjs/package/axios`](https://www.npmjs.com/package/axios) | [![version](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://www.npmjs.com/package/axios)
+| **redux** | [`@redux.js`](https://redux.js.org/) | [![version](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://redux.js.org/)
+| **react-redux** | [`@react-redux.js`](https://react-redux.js.org/) | [![version](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://react-redux.js.org/)
+| **redux-devtools-extension** | [`@github/reduxjs/redux-devtools`](https://github.com/reduxjs/redux-devtools) | [![version](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/reduxjs/redux-devtools)
+| **redux-logger** | [`@npmjs/package/redux-logger`](https://www.npmjs.com/package/redux-logger) | [![version](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://www.npmjs.com/package/redux-logger)
+| **redux-thunk** | [`@npmjs/package/redux-thunk`](https://www.npmjs.com/package/redux-thunk) | [![version](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://www.npmjs.com/package/redux-thunk)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Back To The Top](#read-me-template)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How To Use
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Fast Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+git clone the repo using
+```html
+git clone https://github.com/AmirMeiry/ShoppingListApp.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+enter the git folder and type
+```html
+npm install
+```
 
-## Learn More
+this should install all the dependencies needed to run.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### react installation
+```html
+    # NPM
 
-### Code Splitting
+    npm i react
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    # Yarn
 
-### Analyzing the Bundle Size
+    yarn add react
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+#### axios installation
+```html
+    # NPM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    npm i axios
 
-### Advanced Configuration
+    # Yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    yarn add axios
+```
 
-### Deployment
+#### redux installation
+```html
+    # NPM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    npm install redux
 
-### `npm run build` fails to minify
+    # Yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    yarn add redux
+```
+
+#### react-redux installation
+```html
+    # NPM:
+
+    npm install react-redux
+
+    # Yarn:
+
+    yarn add react-redux
+```
+
+#### redux-devtools-extension installation
+```html
+    # NPM:
+
+    npm install --save redux-devtools-extension
+
+    # Yarn:
+
+    yarn add redux-devtools
+```
+
+#### redux-logger installation
+```html
+    # NPM
+
+    npm i --save redux-logger
+
+    # Yarn
+
+    yarn add redux-logger
+```
+
+#### redux-thunk installation
+```html
+    # NPM
+
+    npm install --save redux-thunk
+
+    # Yarn
+
+    yarn add redux-thunk
+```
+
+#### npm start
+```html
+    # Terminal / CMD
+
+    npm start
+```
+
+[Back To The Top](#read-me-template)
+
+---
+
+## Author Info
+
+- Linkedin - [@amirmeiry](https://www.linkedin.com/in/amir-meiry-5aa2abb9/)
+
+[Back To The Top](#read-me-template)

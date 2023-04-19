@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useState } from "react";
+import { Provider } from "react-redux";
+import store from "./store/store";
+import "./App.css";
+import ShoppingListTitle from "./components/ShoppingListTitle";
+import TotalItems from "./components/TotalItems";
+import AddProductForm from "./components/AddProductForm";
+import Table from "./components/table/Table";
+
+const categories = [
+  "Cleaning Products",
+  "Cheeses",
+  "Vegetables And Fruits",
+  "Meat And Fish",
+  "Pastries",
+];
 
 function App() {
+  const [dataChanged, setDataChanged] = useState(0);
+  const [totalItems, setTotalItems] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <Provider store={store}>
+      <div className="App">
+        <ShoppingListTitle />
+        <TotalItems totalItems={totalItems} />
+        <AddProductForm
+          categories={categories}
+          setDataChanged={setDataChanged}
+          dataChanged={dataChanged}
+        />
+        <hr />
+        <p className="text-info">
+          Products must be collected from the appropriate departments
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <br></br>
+        <Table
+          data={categories}
+          dataChanged={dataChanged}
+          setTotalItems={setTotalItems}
+        />
+      </div>
+    </Provider>
   );
 }
-
 export default App;
